@@ -1,0 +1,11 @@
+version: '3'
+services:
+  lucee:
+    container_name: lucee-box
+    build:
+      context: ./config
+      dockerfile: Dockerfile
+
+    ports:
+      - "8888:8888"
+
