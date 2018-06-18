@@ -1,0 +1,15 @@
+version: '3'
+services:
+  lucee:
+    container_name: lucee-box
+    build:
+      context: ./config
+      dockerfile: Dockerfile
+    image: oscaralvarez/lucee-commandbox
+    network_mode: bridge
+#    links:
+#      - mysql
+    ports:
+      - "8888:8888"
+#    volumes:
+#      - "~/projects/commandbox-cfconfig/commands:/root/.Commandbox:rw"
