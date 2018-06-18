@@ -5,6 +5,7 @@ services:
     build:
       context: ./config
       dockerfile: Dockerfile
+<<<<<<< HEAD
     image: oscaralvarez/lucee-commandbox
     network_mode: bridge
 #    links:
@@ -13,3 +14,9 @@ services:
       - "8888:8888"
 #    volumes:
 #      - "~/projects/commandbox-cfconfig/commands:/root/.Commandbox:rw"
+=======
+
+    ports:
+      - "8888:8888"
+
+>>>>>>> 1870bbec3d04cb82af0d0088df50e24cea0c5c3c
